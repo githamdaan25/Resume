@@ -1,0 +1,183 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+
+\begin{center}
+\begin{tabularx}{\linewidth}{@{} >{\centering\arraybackslash}X @{}}
+  \color[HTML]{1C033C} \Huge{Hamdaan Ahmad} \\[6pt]
+  \textcolor[HTML]{371e77}{\underline{\href{mailto:ahmadhamdan041@gmail.com}{\raisebox{-0.05\height}{\faEnvelope} ahmadhamdan041@gmail.com}} $|$}
+  \textcolor[HTML]{371e77}{\underline{\href{https://github.com/githamdaan25}{\raisebox{-0.05\height}{\faGithub} github.com/githamdaan25}} $|$}
+  \textcolor[HTML]{371e77}{\underline{\href{https://www.linkedin.com/in/hamdaanahmad/}{\raisebox{-0.05\height}{\faLinkedin} linkedin.com/in/hamdaanahmad}}}
+\end{tabularx}
+\end{center}
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{KIET Group of Institutions (KIET)} & \hfill \color[HTML]{371e77} Expected graduation date: July. 2024 \\
+\color[HTML]{371e77} B.Tech in Computer Science and engineering $|$ 
+\color[HTML]{4B28A4} \textit{\textbf{GPA: 7.9/10}} \\
+\multicolumn{2}{@{}X@{}}{Relevant Courses: Programming Languages (C, C++, Python),  Algorithms and Data Structures(C++), OOP, \newline \hspace*{16ex} Database Management Systems, Software Engineering, Cloud Computing}
+\end{tabularx}
+
+
+%Experience
+\section{Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\uline{\href{https://www.feedspace.io/}{Feedspace - Techup Labs}}} \hfill \color[HTML]{371e77} Aug. 2023 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Digital Media Strategist}}\ \hfill \color[HTML]{4B28A4} \textit{Figma, Photoshop} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Spearheaded Feedspace's Twitter, curating daily content and fostering lively interactions.
+        \item Orchestrated social media plans aligned with business goals, adjusting with strategies based on performance analytics.
+        \item Crafted captivating graphics and memes, amplifying brand visibility and driving user engagement.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://tedxkiet.com/}{TED Talks - TEDxKIET}}} \hfill \color[HTML]{371e77} Jun. 2021 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{President and former Technical \& Design Lead}}\ \hfill \color[HTML]{4B28A4} \textit{HTML, CSS, Javascript} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Led cross-functional teams, fostering collaboration and ensuring alignment with project goals and objectives.
+        \item Revamped the TEDxKIET website, to forge an immersive and user-friendly digital experience.
+        \item Pioneered innovative design, crafting a captivating visual identity for TEDxKlET events.
+        \item Revitalized the online presence with interactive features, attracting a wider audience and boosting event participation.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{Digital Media Artist}} \hfill \color[HTML]{371e77} Mar. 2021 - Jun. 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Freelance}} \hfill \color[HTML]{4B28A4} \textit{Photoshop, Figma, Canva, Powerpoint} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Creative Freelance Graphic Designer in developing engaging and innovative digital designs
+        \item Led concurrent freelance design projects, deliverables, and client expectations in a product design role.
+        \item Adapted design concepts based on client feedback, demonstrating flexibility and a commitment to client satisfaction..
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+% Projects
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{Feedspace mobile screens}} \hfill \color[HTML]{371e77} October 2023  \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Feedspace: Collects and measures user feedback.}} \hfill \color[HTML]{4B28A4} \textit{Figma} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Actively contributed in enhancing Feedspace's mobile UI, to deliver a more intuitive and responsive UX.
+        \item Researched and designed impactful enhancements resulting in elevated user engagement and satisfaction.
+        \item Played a pivotal role in refining FeedSpace's mobile interface
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/githamdaan25/Memory-Retention-Tool}{To:DO Applications UI}}} \hfill \color[HTML]{371e77} June 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{To-Do applications for basic needs }} \hfill \color[HTML]{4B28A4} \textit{Figma} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Designed mobile screens for the To:Do applications UI, a task management application, using Figma.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/githamdaan25/Memory-Retention-Tool}{Memory Retention Tool}}} \hfill \color[HTML]{371e77} Sep. 2022 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Dynamic Simon game crafted for effective memory enhancement}} \hfill \color[HTML]{4B28A4} \textit{JavaScript, HTML, CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Developed an engaging web-based memory retention tool, Memory Mastermind.
+        \item Designed intuitive UI to deliver a seamless gaming experience, promoting brain exercise and cognitive improvement.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+
+
+% Leadership and Volunteering
+\section{Leadership and Volunteering}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{TEDxKIET} \color[HTML]{371e77}\textbf{\textit{, President}} \hfill \color[HTML]{371e77} Jun. 2021 - Ongoing \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Guided cross-functional teams, promoting collaboration and ensuring alignment with project goals and objectives.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Rann'23-Intercollege sports Fest} \color[HTML]{371e77}\textbf{\textit{, Design \& Sponsorship Team}} \hfill \color[HTML]{371e77} Jan. 2022 \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Elevated the design \& sponsorship initiatives, fostering great visual experiences and securing valuable partnerships.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\section{Technical Skills}
+\color[HTML]{1C033C}\textbf{Skills:} \\[2pt]
+\color[HTML]{371e77}  Project Management\&Roadmapping, User Experience(UX), User Interface(UI), Graphics designing, Product designing\\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies,Tools \& Languages :} \\[2pt]
+\color[HTML]{371e77}  Git, Power Bi, JIRA, Amplitude, VS Code, Figma, Photoshop, Canva, Github, Behance, C, C++, Javascript, SQL, CSS\\[3pt]
+\color[HTML]{1C033C}\textbf{Certifications:} \\[2pt]
+\color[HTML]{371e77} \uline{\href{https://www.linkedin.com/in/hamdaanahmad/details/certifications/}{Infosys Summer Training on \textbf{AI}, \textbf{AWS:}Cloud Essentials, \textbf{IBM}:Data Science Foundations, Google Cloud Essentials }}}.
+\end{document}
+
